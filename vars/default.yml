@@ -1,0 +1,11 @@
+---
+mysql_root_password: "qwerty@009876"
+app_user: "root"
+http_host: "host_ip_address"   ---> change to your instance ip address
+http_host_1: "lampserver"
+http_conf: "lampserver.conf"
+http_port: "80"
+mysql_db: avinash_db
+mysql_user: avinash_db
+mysql_password: qwerty@123
+disable_default: true
