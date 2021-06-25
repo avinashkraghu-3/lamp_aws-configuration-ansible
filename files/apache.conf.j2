@@ -1,6 +1,6 @@
 <VirtualHost *:{{ http_port }}>
    ServerAdmin webmaster@localhost
-   ServerName {{ http_host }}
+   ServerName {{ ipify_public_ip }}
    DocumentRoot /var/www/{{ http_host_1 }}
    ErrorLog ${APACHE_LOG_DIR}/error.log
    CustomLog ${APACHE_LOG_DIR}/access.log combined
