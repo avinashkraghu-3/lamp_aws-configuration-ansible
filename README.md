@@ -1,4 +1,9 @@
+
 # lamp_aws-configuration-ansible
+
+$$$$$$
+before run this script you must remove ec2_new.pem file 
+$$$$$$
 
 ###Create Aws cli using Pem file- Using following command###  ---> you can use aws cli using to generate pem file
 aws ec2 create-key-pair --key-name ec2 --output text > ec2.pem
