@@ -106,7 +106,12 @@
     - name: Install prerequisites
       apt: name={{ item }} update_cache=yes state=latest force_apt_get=yes
       loop: [ 'aptitude' ]
-
+      
+    - name:  get public ip
+      ipify_facts:
+    - debug: var=ipify_public_ip
+    
+    
     - name: "Add repository for PHP 7.0."
       apt_repository: 
         repo="ppa:ondrej/php" 
